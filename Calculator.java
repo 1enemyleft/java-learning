@@ -1,8 +1,8 @@
 public class Calculator{
   //this program is creating a calculator with few functions. 
   
-  public Calculator() { 
-  }
+  //public Calculator() { 
+  //}
 
   // add
   public static int add(int a, int b) {
@@ -38,7 +38,7 @@ public class Calculator{
   public static int modulo(int a, int b) {
     int c;
     if (b == 0){
-      System.out.println("Error! Dividing by zero is not allowed");
+      System.err.println("Error! Dividing by zero is not allowed");
     	c = 0;
     } else {
  		  c = a % b;
@@ -47,9 +47,9 @@ public class Calculator{
   }
   
   public static void main(String[] args){
-    Calculator myCalculator = new Calculator();
-    System.out.println(myCalculator.add(5, 7));
-    System.out.println(myCalculator.subtract(45, 11));
+    //Calculator myCalculator = new Calculator();
+    System.out.println(Calculator.add(5, 7));
+    System.out.println(Calculator.subtract(45, 11));
   }
   
 }
